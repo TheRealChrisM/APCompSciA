@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TicTacToe
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ TicTacToe\ here.\r\n\r\n\ @author\ Me\ myself\ and\ I\r\n\ @version\ 0.0.1\r\n
+comment1.params=
+comment1.target=TicTacToe()
+comment1.text=\r\n\ Constructs\ an\ empty\ board.\r\n
+comment2.params=i\ j\ player
+comment2.target=void\ set(int,\ int,\ java.lang.String)
+comment2.text=\r\n\ sets\ a\ field-boi\ on\ de\ bord\ and\ mks\ shure\ de\ spaec\ iz\ unnnnnnnnnnooooooccccccccccupiedd.\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ Returns\ a\ string,\ so\ ur\ board\ kan\ hav\ spme\ prionty\ boies\ and\ kan\ be\ shwn.\r\n
+numComments=4

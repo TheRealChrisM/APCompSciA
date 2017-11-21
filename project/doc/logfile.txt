@@ -1,0 +1,44 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files (x86)\BlueJ\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.11.jar;C:\Program Files (x86)\BlueJ\lib\hamcrest-core-1.3.jar;C:\Program Files (x86)\BlueJ\lib\lang-stride.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\ctmarotta36\DiceGame
+-d
+C:\Users\ctmarotta36\DiceGame\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+C:\Users\ctmarotta36\DiceGame\SuperFunTimeGame.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\ctmarotta36\DiceGame\SuperFunTimeGame.java...
+C:\Users\ctmarotta36\DiceGame\SuperFunTimeGame.java:9: error: invalid method declaration; return type required
+    public static playGame(){
+                  ^
+C:\Users\ctmarotta36\DiceGame\SuperFunTimeGame.java:10: error: illegal start of expression
+        while(currentKash>0)&&(currentKash<STARTING_KASH*2){
+                            ^
+C:\Users\ctmarotta36\DiceGame\SuperFunTimeGame.java:10: error: ';' expected
+        while(currentKash>0)&&(currentKash<STARTING_KASH*2){
+                                                           ^
+C:\Users\ctmarotta36\DiceGame\SuperFunTimeGame.java:17: error: unclosed string literal
+                System.out.println("Current moneyL
+                                   ^
+C:\Users\ctmarotta36\DiceGame\SuperFunTimeGame.java:17: error: ';' expected
+                System.out.println("Current moneyL
+                                                  ^
+C:\Users\ctmarotta36\DiceGame\SuperFunTimeGame.java:18: error: reached end of file while parsing
+}
+ ^
+6 errors

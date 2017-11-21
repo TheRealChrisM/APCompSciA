@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=HorseBarn
+comment1.params=
+comment1.target=HorseBarn()
+comment2.params=name
+comment2.target=int\ findHorseSpace(java.lang.String)
+comment3.params=
+comment3.target=void\ consolodate()
+comment3.text=public\ void\ consolodate(){\r\n\ \ \ \ \ \ \ \ for(int\ x\=0;x<\=STABLE_SIZE-1;x++){\r\n\ \ \ \ \ \ \ \ \ \ \ \ checkEmptySpaces(x);\r\n\ \ \ \ \ \ \ \ \ \ \ \ if(x\!\=horses[1]){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ spaces[x]\=spaces[horses[0]];\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ private\ void\ checkEmptySpaces(int\ y){\r\n\ \ \ \ \ \ \ \ if(y\=\=0){\r\n\ \ \ \ \ \ \ \ \ \ \ \ horses[0]\=y;\r\n\ \ \ \ \ \ \ \ \ \ \ \ checkEmptySpaces(y+1);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ else{\r\n\ \ \ \ \ \ \ \ \ \ \ \ horses[1]\=y;\r\n\ \ \ \ \ \ \ \ }\r\n}*
+comment4.params=z
+comment4.target=int\ nextTakenSpace(int)
+comment5.params=x\ position
+comment5.target=void\ placeHorse(Horse,\ int)
+numComments=6

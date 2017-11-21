@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Triangles
+comment1.params=enteredInput
+comment1.target=Triangles(int)
+comment2.params=
+comment2.target=void\ drawTriangle()
+numComments=3
