@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PictureThingy
+comment0.text=\r\n\ Draws\ a\ picture\ thingy\r\n\r\n\ @author\ Me,\ Myself,\ and\ I\r\n\ @version\ 0.0.0.0.0.0.0.0.0.0.1\r\n
+comment1.params=g
+comment1.target=void\ paintComponent(java.awt.Graphics)
+numComments=2
