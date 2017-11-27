@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=GameOfLife
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GameOfLife\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=x\ y
+comment1.target=GameOfLife(int,\ int)
+comment1.text=\r\n\ Constructor\ for\ 2d\ array\ of\ strings\r\n\ int\ x\ \=\ total\ rows\r\n\ int\ y\ \=\ total\ columns\r\n
+comment2.params=
+comment2.target=void\ nextGen()
+comment2.text=\r\n\ Goes\ to\ the\ next\ generation\r\n
+comment3.params=
+comment3.target=void\ buildRandomBoard()
+comment3.text=\r\n\ Builds\ a\ board\ randomly\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ Prints\ out\ the\ string\ and\ tells\ what\ generation\ you\ are\ on.\r\n
+numComments=5

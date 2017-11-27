@@ -19,8 +19,12 @@ public class MagicSquare
         magicNum = n;
         magicNumSquared = Math.pow(n,2);
     }
-    
-    
+    /**
+     * Creates the magic square
+     */
+    public void createMagicSquare(){
+        
+    }
     /**
      * toString method, returns a string
      */
