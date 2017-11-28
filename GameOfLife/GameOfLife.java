@@ -1,4 +1,4 @@
-
+import java.util.Random;
 /**
  * Write a description of class GameOfLife here.
  *
@@ -12,18 +12,21 @@ public class GameOfLife
     private int generation;
     private int rows;
     private int columns;
-    private String emptySpace = ". ";
-    private String filledSpace = ", ";
+    private double fillAmmount;
+    private String emptySpace = "\u26AA ";
+    private String filledSpace = "\u26AB ";
     /**
      * Constructor for 2d array of strings
      * int x = total rows
      * int y = total columns
+     * int m = fill ammount
      */
-    public GameOfLife(int x, int y){
+    public GameOfLife(int x, int y, int m){
         board = new String[x][y];
         generation = 0;
         rows = x;
         columns = y;
+        fillAmmount = m/10;
         
         for(int i = 0;i<rows;i++){
             for(int z = 0;z<columns;z++){
@@ -45,9 +48,28 @@ public class GameOfLife
      * Builds a board randomly
      */
     public void buildRandomBoard(){
-        
+        Random randOut = new Random();
+        System.out.println("t1");
+        for(int x = 0; x<rows; x++){
+            System.out.println("t2");
+            for(int y = 0; y<columns;y++){
+                System.out.println("t3");
+                double randNo = randOut.nextDouble();
+                if(randNo>fillAmmount){
+                    System.out.println("t4");
+                    placeLife(x,y);
+                }
+            }
+        }
     }
-    
+    /**
+     * Places a life on the specified space
+     * x: row
+     * y: column
+     */
+    public void placeLife(int x, int y){
+        board[x][y] = filledSpace;
+    }
     /**
      * Prints out the string and tells what generation you are on.
      */

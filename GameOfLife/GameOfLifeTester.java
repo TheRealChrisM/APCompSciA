@@ -14,10 +14,11 @@ public class GameOfLifeTester
         int rows = input.nextInt();
         System.out.println("How many columns would you like?");
         int columns = input.nextInt();
-        
+        System.out.println("How filled would you like the board? 0-10");
+        int howFilled = input.nextInt();
         System.out.println("Creating randomized board with specified dimensions...");
-        GameOfLife life = new GameOfLife(rows, columns);
-        
+        GameOfLife life = new GameOfLife(rows, columns, howFilled);
+        life.buildRandomBoard();
         System.out.println(life);
     }
 }
