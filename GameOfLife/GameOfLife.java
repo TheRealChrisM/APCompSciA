@@ -21,12 +21,12 @@ public class GameOfLife
      * int y = total columns
      * int m = fill ammount
      */
-    public GameOfLife(int x, int y, int m){
+    public GameOfLife(int x, int y, double m){
         board = new String[x][y];
         generation = 0;
         rows = x;
         columns = y;
-        fillAmmount = m/10;
+        fillAmmount = (m/10);
         
         for(int i = 0;i<rows;i++){
             for(int z = 0;z<columns;z++){
@@ -49,14 +49,10 @@ public class GameOfLife
      */
     public void buildRandomBoard(){
         Random randOut = new Random();
-        System.out.println("t1");
         for(int x = 0; x<rows; x++){
-            System.out.println("t2");
             for(int y = 0; y<columns;y++){
-                System.out.println("t3");
                 double randNo = randOut.nextDouble();
                 if(randNo>fillAmmount){
-                    System.out.println("t4");
                     placeLife(x,y);
                 }
             }

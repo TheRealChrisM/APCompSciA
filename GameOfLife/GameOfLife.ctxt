@@ -2,7 +2,7 @@
 comment0.target=GameOfLife
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ GameOfLife\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=x\ y\ m
-comment1.target=GameOfLife(int,\ int,\ int)
+comment1.target=GameOfLife(int,\ int,\ double)
 comment1.text=\r\n\ Constructor\ for\ 2d\ array\ of\ strings\r\n\ int\ x\ \=\ total\ rows\r\n\ int\ y\ \=\ total\ columns\r\n\ int\ m\ \=\ fill\ ammount\r\n
 comment2.params=
 comment2.target=void\ nextGen()
