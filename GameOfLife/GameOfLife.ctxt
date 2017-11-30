@@ -7,13 +7,22 @@ comment1.text=\r\n\ Constructor\ for\ 2d\ array\ of\ strings\r\n\ int\ x\ \=\ to
 comment2.params=
 comment2.target=void\ nextGen()
 comment2.text=\r\n\ Goes\ to\ the\ next\ generation\r\n
-comment3.params=
-comment3.target=void\ buildRandomBoard()
-comment3.text=\r\n\ Builds\ a\ board\ randomly\r\n
+comment3.params=x\ y
+comment3.target=void\ normalCheck(int,\ int)
+comment3.text=\r\n\ Checks\ for\ what\ to\ do\ with\ the\ life\ in\ normal\ spaced\r\n\ x\=rows\r\n\ y\=columns\r\n
 comment4.params=x\ y
-comment4.target=void\ placeLife(int,\ int)
-comment4.text=\r\n\ Places\ a\ life\ on\ the\ specified\ space\r\n\ x\:\ row\r\n\ y\:\ column\r\n
+comment4.target=void\ edgeCheck(int,\ int)
+comment4.text=\r\n\ Checks\ for\ what\ to\ do\ with\ life\ in\ edge\ spaces\r\n\ x\=rows\r\n\ y\=columns\r\n
 comment5.params=
-comment5.target=java.lang.String\ toString()
-comment5.text=\r\n\ Prints\ out\ the\ string\ and\ tells\ what\ generation\ you\ are\ on.\r\n
-numComments=6
+comment5.target=void\ buildRandomBoard()
+comment5.text=\r\n\ Builds\ a\ board\ randomly\r\n
+comment6.params=x\ y
+comment6.target=void\ placeLife(int,\ int)
+comment6.text=\r\n\ Places\ a\ life\ on\ the\ specified\ space\r\n\ x\:\ row\r\n\ y\:\ column\r\n
+comment7.params=x\ y
+comment7.target=void\ removeLife(int,\ int)
+comment7.text=\r\n\ Removes\ a\ life\ on\ the\ specified\ space\r\n\ x\:\ row\r\n\ y\:\ column\r\n
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment8.text=\r\n\ Prints\ out\ the\ string\ and\ tells\ what\ generation\ you\ are\ on.\r\n
+numComments=9

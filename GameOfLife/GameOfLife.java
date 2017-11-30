@@ -39,11 +39,45 @@ public class GameOfLife
      * Goes to the next generation
      */
     public void nextGen(){
+        //represents whether the life should be left on or off, if true life is on.
+        boolean lifeOn;
+        for(int i = 0;i<rows;i++){
+            for(int z = 0;z<columns;z++){
+                if(i!=0&&i!=(rows-1)&&z!=0&&z!=(columns-1)){
+                    lifeOn = normalCheck(i,z);
+                }
+                else{
+                    lifeOn = edgeCheck(i,z);
+                }
+                if(lifeOn){
+                    placeLife(i,z);
+                }
+                else{
+                    removeLife(i,z);
+                }
+            }
+        }
         
         
         generation++;
     }
+    /**
+     * Checks for what to do with the life in normal spaced
+     * x=rows
+     * y=columns
+     */
+    public boolean normalCheck(int x, int y){
     
+        
+    }
+    /**
+     * Checks for what to do with life in edge spaces
+     * x=rows
+     * y=columns
+     */
+    public boolean edgeCheck(int x, int y){
+        
+    }
     /**
      * Builds a board randomly
      */
@@ -65,6 +99,14 @@ public class GameOfLife
      */
     public void placeLife(int x, int y){
         board[x][y] = filledSpace;
+    }
+    /**
+     * Removes a life on the specified space
+     * x: row
+     * y: column
+     */
+    public void removeLife(int x, int y){
+        board[x][y] = emptySpace;
     }
     /**
      * Prints out the string and tells what generation you are on.
