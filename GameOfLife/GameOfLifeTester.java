@@ -22,11 +22,11 @@ public class GameOfLifeTester
         life.buildRandomBoard();
         System.out.println("Your starting board!");
         System.out.println(life);
-        System.out.println("How long would you like for it to wait between generations? *In mili");
-        int 
+        System.out.println("How long would you like for it to wait between generations? *In miliseconds...*");
+        int timeToWait = input.nextInt();
         while(true){
             try{
-                Thread.sleep(1000);
+                Thread.sleep(timeToWait);
             }
             catch(Exception e){}
             System.out.println("\u000c");
