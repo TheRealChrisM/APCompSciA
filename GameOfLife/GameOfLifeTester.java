@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.IOException;
 /**
  * Write a description of class GameOfLifeTester here.
  *
@@ -21,7 +22,13 @@ public class GameOfLifeTester
         life.buildRandomBoard();
         System.out.println("Your starting board!");
         System.out.println(life);
+        System.out.println("How long would you like for it to wait between generations? *In mili");
+        int 
         while(true){
+            try{
+                Thread.sleep(1000);
+            }
+            catch(Exception e){}
             System.out.println("\u000c");
             life.nextGen();
             System.out.println(life);
