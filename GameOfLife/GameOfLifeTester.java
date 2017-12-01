@@ -19,6 +19,12 @@ public class GameOfLifeTester
         System.out.println("Creating randomized board with specified dimensions...");
         GameOfLife life = new GameOfLife(rows, columns, howFilled);
         life.buildRandomBoard();
+        System.out.println("Your starting board!");
         System.out.println(life);
+        while(true){
+            System.out.println("\u000c");
+            life.nextGen();
+            System.out.println(life);
+        }
     }
 }

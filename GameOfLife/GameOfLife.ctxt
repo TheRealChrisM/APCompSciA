@@ -8,10 +8,10 @@ comment2.params=
 comment2.target=void\ nextGen()
 comment2.text=\r\n\ Goes\ to\ the\ next\ generation\r\n
 comment3.params=x\ y
-comment3.target=void\ normalCheck(int,\ int)
-comment3.text=\r\n\ Checks\ for\ what\ to\ do\ with\ the\ life\ in\ normal\ spaced\r\n\ x\=rows\r\n\ y\=columns\r\n
+comment3.target=boolean\ normalCheck(int,\ int)
+comment3.text=\r\n\ Checks\ for\ what\ to\ do\ with\ the\ life\ in\ normal\ spaced\r\n\ true\ \=\ keep\ alive\r\n\ false\ \=\ kill\ off\r\n\ x\=rows\r\n\ y\=columns\r\n
 comment4.params=x\ y
-comment4.target=void\ edgeCheck(int,\ int)
+comment4.target=boolean\ edgeCheck(int,\ int)
 comment4.text=\r\n\ Checks\ for\ what\ to\ do\ with\ life\ in\ edge\ spaces\r\n\ x\=rows\r\n\ y\=columns\r\n
 comment5.params=
 comment5.target=void\ buildRandomBoard()
