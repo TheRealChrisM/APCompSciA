@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Student
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Student\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=first\ last\ grade
+comment1.target=Student(java.lang.String,\ java.lang.String,\ double)
+comment1.text=\r\n\ Constructor\ for\ student\ objects\r\n
+comment2.params=
+comment2.target=java.lang.String\ getFName()
+comment2.text=\r\n\ Returns\ the\ first\ name\r\n
+comment3.params=
+comment3.target=java.lang.String\ getlName()
+comment3.text=\r\n\ Returns\ the\ last\ name\r\n
+comment4.params=
+comment4.target=double\ getGPA()
+comment4.text=\r\n\ Returns\ the\ GPA\ \r\n
+comment5.params=newGPA
+comment5.target=void\ changeGPA(double)
+comment5.text=\r\n\ Allows\ you\ to\ change\ the\ GPA\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
