@@ -12,7 +12,7 @@ public class ClassroomTester
         
         Student john = new Student("John", "Doe", 1);
         Student jane = new Student("Jane", "Doe", 2);
-        Student mr = new Student("Mr.", "Friedman", 18);
+        Student mr = new Student("Mr.", "Friedman", 3);
         
         cRoom.addStudent(john);
         cRoom.addStudent(jane);
@@ -20,5 +20,7 @@ public class ClassroomTester
     
         System.out.println(cRoom + "\n \n" + cRoom.getSize());
         System.out.println(cRoom.getAStudents());
+        System.out.println("The top student is...");
+        System.out.println(cRoom.getTopStudent());
     }
 }

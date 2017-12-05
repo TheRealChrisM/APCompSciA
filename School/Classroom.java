@@ -63,6 +63,19 @@ public class Classroom
         return rS;
     }
     /**
+     * Returns the top student
+     */
+    public Student getTopStudent(){
+        Student rS = roster.get(0);
+        for(Student s : roster){
+            if(s.getGPA()>=rS.getGPA()){
+                rS = s;
+            }
+        }
+        
+        return rS;
+    }
+    /**
      * Returns a string version of the Classroom.
      */
     public String toString(){
