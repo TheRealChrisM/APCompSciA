@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=FriedmanStack
+comment1.params=
+comment1.target=FriedmanStack()
+comment2.params=
+comment2.target=java.lang.Object\ peek()
+comment3.params=
+comment3.target=boolean\ empty()
+comment4.params=
+comment4.target=java.lang.Object\ pop()
+comment5.params=item
+comment5.target=void\ push(java.lang.Object)
+comment6.params=item
+comment6.target=int\ search(java.lang.Object)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8
