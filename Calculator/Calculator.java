@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Calculator
 {
     //PIV
-    private FriedmanStack stack = new FriedmanStack();
+    private FriedmanStack<String> stack = new FriedmanStack<String>();
     private String inFixNot = "";
     private String postFixNot = "";
     private char spaceChar = ' ';
