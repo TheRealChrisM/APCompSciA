@@ -16,6 +16,7 @@ public class MagicSquareTester
            int magicNum = input.nextInt();
            if(!((magicNum/2)==0)){ 
                MagicSquare magicSquare = new MagicSquare(magicNum);
+               magicSquare.createMagicSquare();
                System.out.println(magicSquare);
            }
            else{
