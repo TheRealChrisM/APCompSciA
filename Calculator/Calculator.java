@@ -10,6 +10,7 @@ public class Calculator
     //PIV
     private FriedmanStack<String> stack = new FriedmanStack<String>();
     private FriedmanStack<String> hold = new FriedmanStack<String>();
+    private FriedmanStack<Integer> stackInt = new FriedmanStack<Integer>();
     private String inFixNot = "";
     private String postFixNot = "";
     private String spaceChar = " ";
@@ -47,6 +48,14 @@ public class Calculator
                 arr.add(inFixTemp.substring(x-1,x));
             }
         }
+        while(!stack.empty()){
+            if(!(stack.peek().equals("("))&&!(stack.peek().equals(")"))){
+                arr.add(stack.pop());
+            }
+            else{
+                stack.pop();
+            }
+        }
         //turns the array into a string
         for(int i=0; i < arr.size(); i++){
             returnStatement+=arr.get(i) + " ";
@@ -62,7 +71,7 @@ public class Calculator
             stack.push("(");
         }
         else if(opCheck.equals(")")){
-            int locToStop = stack.search(")")-1;
+            int locToStop = stack.search("(")-1;
             
             for(int i = 0; i<locToStop; i++){
                 arr.add(stack.pop());
@@ -156,12 +165,39 @@ public class Calculator
     }
     //Evaluates the postfix problem and returns an int.
     public int evaluate(String postFix){
-        for(int i = 0; i<postFix.length()/2;i++){
+        int numInStack = 0;
+        while(!stack.empty()){
+            stackInt.pop();
+            }
+        
+        for(int i = 1; i<postFix.length();i++){
+            //System.out.println(stackInt);
+            if(postFix.substring(i-1,i).equals("+")||postFix.substring(i-1,i).equals("-")||postFix.substring(i-1,i).equals("/")||postFix.substring(i-1,i).equals("*")||postFix.substring(i-1,i).equals("^")){
             
-            
+            }
+            else if(postFix.substring(i-1,i).equals(" ")){
+                
+            }
+            else{
+                //System.out.println("Test");
+                stackInt.push(Integer.parseInt((postFix.substring(i-1,i))));
+                numInStack++;
+            }
+            if(numInStack>2&&postFix.substring(i-1,i).equals("+")||postFix.substring(i-1,i).equals("-")||postFix.substring(i-1,i).equals("/")||postFix.substring(i-1,i).equals("*")||postFix.substring(i-1,i).equals("^")){
+                int m = stackInt.pop();
+                int n = stackInt.pop();
+                
+                switch(postFix.substring(i-1,i)){
+                    case "*": stackInt.push(n*m); break;
+                    case "/": stackInt.push(n/m); break;
+                    case "+": stackInt.push(n+m); break; 
+                    case "-": stackInt.push(n-m); break;
+                    case "^": stackInt.push((int)(Math.pow(n,m))); break;   
+                }
+            }
+            }
+        return stackInt.pop();
         }
-        return 0;
-    }
     //returns a string of the Calculator object 
     public String toString(){
         return "";
