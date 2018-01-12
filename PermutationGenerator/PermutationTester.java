@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class PermutationTester
 {
     public static void main(String[] args){
-        PermutationGenerator gen = new PermutationGenerator("cat");
+        PermutationGenerator gen = new PermutationGenerator("abcd");
         ArrayList<String> perms = gen.getPermutation();
         
         for(String s : perms){
