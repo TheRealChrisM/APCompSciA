@@ -11,5 +11,6 @@ public class PolygonTester{
         System.out.println("The Perimeter of the " + poly.name() + " is\t"+ poly.perimeter());
         
         System.out.println("The area of the " + poly.name() + " is\t" + poly.area());
+        System.out.println("The area of the " + poly.name() + " calculated recursively is\t" + poly.recursiveArea(1));        
     }
 }
