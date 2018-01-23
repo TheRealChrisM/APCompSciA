@@ -91,12 +91,10 @@ public class Polygon{
     public int recursiveArea(int n){
         if((n+2)==points.length){
             int absVal = Math.abs((points[0].getX())*(points[n].getY())+(points[n].getX())*(points[n+1].getY())+(points[n+1].getX())*(points[0].getY())-(points[0].getY())*(points[n].getX())-(points[n].getY())*(points[n+1].getX())-(points[n+1].getY())*(points[0].getX()));
-            System.out.println(absVal/2);
             return absVal/2;
         }
         else{
             int absValOther = Math.abs((points[0].getX())*(points[n].getY())+(points[n].getX())*(points[n+1].getY())+(points[n+1].getX())*(points[0].getY())-(points[0].getY())*(points[n].getX())-(points[n].getY())*(points[n+1].getX())-(points[n+1].getY())*(points[0].getX()));
-            System.out.println(absValOther/2);
             return (absValOther/2)+recursiveArea(n+1);
         }
         
