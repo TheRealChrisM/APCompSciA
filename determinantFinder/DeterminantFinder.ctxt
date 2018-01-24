@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=DeterminantFinder
+comment1.params=matrix
+comment1.target=boolean\ determinantDefined(int[][])
+comment1.text=\r\n\ Determines\ if\ the\ determinant\ is\ defined\ for\ matrix.\r\n\ @return\ true\ if\ the\ determinant\ is\ defined,\ false\ otherwise.\r\n
+comment2.params=matrix
+comment2.target=int\ findTwoByTwoDeterminant(int[][])
+comment2.text=\r\n\ Calculates\ the\ determinant\ of\ matrix,\ which\ must\ be\ a\ 2x2\ matrix.\r\n\ (Precondition\:\ matrix.length\ \=\=\ 2\ &&\ matrix[0].length\ \=\=\ 2)\r\n\ @return\ the\ determinant.\r\n\ @throws\ IllegalArgumentException\ if\ the\ precondition\ is\ not\ met.\r\n
+comment3.params=matrix\ rowToRemove\ colToRemove
+comment3.target=int[][]\ removeRowAndColumn(int[][],\ int,\ int)
+comment3.text=\r\n\ Calculates\ a\ matrix\ identical\ to\ matrix\ with\ the\ specific\ row\ and\ column\ removed.\r\n\ (Precondition\:\ rowToRemove\ >\=\ 0\ &&\ colToRemove\ >\=\ 0\ &&\ matrix.length\ >\r\n\ \ \ rowToRemove\ &&\ matrix[0].length\ >\ colToRemove)\r\n\ @return\ matrix\ identical\ to\ matrix\ without\ the\ specified\ row\ and\ column.\r\n\ @throws\ IllegalArgumentException\ if\ the\ precondition\ is\ not\ met.\r\n
+comment4.params=matrix
+comment4.target=int\ findDeterminant(int[][])
+comment4.text=\r\n\ Calculates\ the\ determinant\ of\ matrix.\r\n\ (Precondition\:\ determinantDefined(matrix)\ returns\ true.)\r\n\ @return\ the\ determinant.\r\n\ @throws\ IllegalArgumentException\ if\ the\ precondition\ is\ not\ met.\r\n
+comment5.params=matrix
+comment5.target=boolean\ atLeastOneByOne(int[][])
+numComments=6

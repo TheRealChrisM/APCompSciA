@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=DeterminantFinderTester
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ testTwoByTwoDeterminant()
+comment3.params=
+comment3.target=void\ testDeterminant()
+comment4.params=matrix
+comment4.target=void\ printMatrix(int[][])
+numComments=5
