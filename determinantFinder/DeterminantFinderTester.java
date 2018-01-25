@@ -4,18 +4,18 @@ public class DeterminantFinderTester
 {
   public static void main(String[] args)
   {
-    int[][] matrixo = new int[][]
-    {
-    { 1, -2, 4, 0 },
-    { 7, 3, 0, 3 },
-    { -1, 1, -4, 0 },
-    { 0, 3, 2, 1 } };
+    //int[][] matrixo = new int[][]
+    //{
+    //{ 1, -2, 4, 0 },
+    //{ 7, 3, 0, 3 },
+    //{ -1, 1, -4, 0 },
+    //{ 0, 3, 2, 1 } };
       
-    //testTwoByTwoDeterminant();
-    printMatrix(matrixo);
-    System.out.println();
-    printMatrix(DeterminantFinder.removeRowAndColumn(DeterminantFinder.removeRowAndColumn(matrixo,1,1),1,1));
-    //testDeterminant();
+    testTwoByTwoDeterminant();
+    //printMatrix(matrixo);
+    //System.out.println();
+    //printMatrix(DeterminantFinder.removeRowAndColumn(DeterminantFinder.removeRowAndColumn(matrixo,1,1),1,1));
+    testDeterminant();
   }
 
   public static void testTwoByTwoDeterminant()
@@ -44,11 +44,23 @@ public class DeterminantFinderTester
     { -1, 1, -4, 0 },
     { 0, 3, 2, 1 } };
 
+    int[][] matrixWon = new int[][]
+    {
+    {-2, 4, 0 },
+    {3, 0, 3 },
+    {1, -4, 0 },
+    {3, 2, 1 } };
+    
     int determinant = DeterminantFinder.findDeterminant(matrix);
-
+    int determinantWon = DeterminantFinder.findDeterminant(matrixWon);
+    
     printMatrix(matrix);
     System.out.println("DeterminantFinder.findDeterminant(matrix):");
     System.out.println(determinant);
+    
+    printMatrix(matrixWon);
+    System.out.println("DeterminantFinder.findDeterminant(matrixWon):");
+    System.out.println(determinantWon);
   }
 
   public static void printMatrix(int[][] matrix)

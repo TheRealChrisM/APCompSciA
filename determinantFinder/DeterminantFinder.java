@@ -8,7 +8,19 @@ public class DeterminantFinder
      */
     public static boolean determinantDefined(int[][] matrix)
     {
-        return true;
+        if(matrix.length>0&&matrix[0].length>0){
+           int rowLen = matrix.length;
+           int colLen = matrix[0].length;
+           if(rowLen == colLen){
+               return true;
+           }
+           else{
+               return false;
+            }
+        }
+        else{
+            return false;
+        }
     }
 
     /**
@@ -19,7 +31,15 @@ public class DeterminantFinder
      */
     public static int findTwoByTwoDeterminant(int[][] matrix)
     {
-        return -1;
+        int det = 0;
+        int a = matrix[0][0];
+        int b = matrix[0][1];
+        int c = matrix[1][0];
+        int d = matrix[1][1];
+        
+        det = (a*d)-(b*c);
+        
+        return det;
     }
 
     /**
@@ -29,7 +49,7 @@ public class DeterminantFinder
      * @return matrix identical to matrix without the specified row and column.
      * @throws IllegalArgumentException if the precondition is not met.
      */
-    public static int[][] removeRowAndColumn(int[][] matrix, int rowToRemove, int colToRemove)
+    private static int[][] removeRowAndColumn(int[][] matrix, int rowToRemove, int colToRemove)
     {
         int[][] newMatrix = new int[matrix.length-1][matrix[0].length-1];
         int curRowPos = 0;
@@ -57,7 +77,17 @@ public class DeterminantFinder
      */
     public static int findDeterminant(int[][] matrix)
     {
-        return -1;
+        int finDet = 0;
+        if(matrix.length==2&&matrix[0].length==2){
+            return findTwoByTwoDeterminant(matrix);
+        }
+        else{
+            for(int x = 0; x < matrix[0].length-1; x++){
+                finDet += (findTwoByTwoDeterminant(removeRowAndColumn(matrix,0,x)))*(-1*(matrix[0][x]));
+            }
+            return finDet;
+        }
+        //return -1;
     }
 
     private static boolean atLeastOneByOne(int[][] matrix)
