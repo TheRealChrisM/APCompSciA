@@ -48,7 +48,6 @@ public class DeterminantFinderTester
     {
     {-2, 4, 0 },
     {3, 0, 3 },
-    {1, -4, 0 },
     {3, 2, 1 } };
     
     int determinant = DeterminantFinder.findDeterminant(matrix);

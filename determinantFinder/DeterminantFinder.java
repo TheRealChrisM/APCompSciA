@@ -77,13 +77,18 @@ public class DeterminantFinder
      */
     public static int findDeterminant(int[][] matrix)
     {
-        int finDet = 0;
+        int finDet=0;
         if(matrix.length==2&&matrix[0].length==2){
             return findTwoByTwoDeterminant(matrix);
         }
         else{
             for(int x = 0; x < matrix[0].length-1; x++){
-                finDet += (findTwoByTwoDeterminant(removeRowAndColumn(matrix,0,x)))*(-1*(matrix[0][x]));
+                if((x%2)==0){
+                    finDet += (findDeterminant(removeRowAndColumn(matrix,0,x)))*(matrix[0][x]);
+                }
+                else{
+                    finDet += (findDeterminant(removeRowAndColumn(matrix,0,x)))*(matrix[0][x])*-1;                    
+                }
             }
             return finDet;
         }
