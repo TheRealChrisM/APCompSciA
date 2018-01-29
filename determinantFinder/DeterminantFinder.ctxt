@@ -14,4 +14,6 @@ comment4.target=int\ findDeterminant(int[][])
 comment4.text=\r\n\ Calculates\ the\ determinant\ of\ matrix.\r\n\ (Precondition\:\ determinantDefined(matrix)\ returns\ true.)\r\n\ @return\ the\ determinant.\r\n\ @throws\ IllegalArgumentException\ if\ the\ precondition\ is\ not\ met.\r\n
 comment5.params=matrix
 comment5.target=boolean\ atLeastOneByOne(int[][])
-numComments=6
+comment6.params=matrix
+comment6.target=java.lang.String\ printMatrix(int[][])
+numComments=7

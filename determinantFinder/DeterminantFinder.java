@@ -82,11 +82,13 @@ public class DeterminantFinder
             return findTwoByTwoDeterminant(matrix);
         }
         else{
-            for(int x = 0; x < matrix[0].length-1; x++){
+            for(int x = 0; x < matrix[0].length; x++){
                 if((x%2)==0){
+                    //System.out.println(printMatrix(removeRowAndColumn(matrix,0,x))+matrix[0][x]);
                     finDet += (findDeterminant(removeRowAndColumn(matrix,0,x)))*(matrix[0][x]);
                 }
                 else{
+                    //System.out.println(printMatrix(removeRowAndColumn(matrix,0,x))+matrix[0][x]);
                     finDet += (findDeterminant(removeRowAndColumn(matrix,0,x)))*(matrix[0][x])*-1;                    
                 }
             }
@@ -98,5 +100,13 @@ public class DeterminantFinder
     private static boolean atLeastOneByOne(int[][] matrix)
     {
         return matrix != null && matrix.length > 0 && matrix[0].length > 0;
+    }
+    public static String printMatrix(int[][] matrix)
+    {
+        String rs ="";
+        for (int row = 0; row < matrix.length; row++){
+             rs += "\n" + java.util.Arrays.toString(matrix[row]);
+        }
+        return rs;
     }
 }
