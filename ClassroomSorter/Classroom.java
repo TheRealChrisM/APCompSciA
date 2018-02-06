@@ -7,11 +7,31 @@
  */
 public class Classroom
 {
-    private Student[][] roster;
+    private Student[] roster;
     private String location;
-    private String Teacher;
+    private String teacher;
     
-    public Classroom(){
+    public Classroom(String loc, String teach){
+        location = loc;
+        teacher = teach;
+        roster = new Student[29];
+    }
+    public String getLocation(){
+        return location;
+    }
+    public String getTeacher(){
+        return teacher;
+    }
+    public void getStudents(){
+        System.out.println("Students for " + teacher + "'s class");
+        for(int x = 0; x<roster.length; x++){
+            System.out.println(x + ") " + roster[x]);
+        }
+    }
+    public void addStudent(){
+        
+    }
+    public void removeStudent(int arrLoc){
         
     }
 }

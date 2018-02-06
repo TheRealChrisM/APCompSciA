@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Student
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Student\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=first\ last\ grade\ gradeLevel\ id
+comment1.params=first\ last\ aGrade\ gradeLevel\ id
 comment1.target=Student(java.lang.String,\ java.lang.String,\ double,\ int,\ int)
 comment2.params=fOrL
 comment2.target=java.lang.String\ getName(boolean)
@@ -11,4 +11,6 @@ comment4.params=
 comment4.target=int\ getGrade()
 comment5.params=
 comment5.target=int\ getSID()
-numComments=6
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

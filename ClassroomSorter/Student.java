@@ -12,10 +12,10 @@ public class Student
     private double GPA;
     private int grade;
     private int sID;
-    public Student(String first, String last, double grade, int gradeLevel, int id){
+    public Student(String first, String last, double aGrade, int gradeLevel, int id){
         fName = first;
         lName = last;
-        GPA = grade;
+        GPA = aGrade;
         grade = gradeLevel;
         sID = id;
     }
@@ -36,5 +36,8 @@ public class Student
     }
     public int getSID(){
         return sID;
+    }
+    public String toString(){
+        return lName + ", " + fName + " (GPA: " + GPA + " | Grade: " + grade + " | Student ID: " + sID + ")";
     }
 }
