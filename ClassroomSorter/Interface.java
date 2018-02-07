@@ -39,7 +39,17 @@ public class Interface
         System.out.println("Press 1 to add a student. Press 2 to remove a student.");
         int option = students.nextInt();
         if(option == 1){
-            
+            String fName; String lName; double gpah; int gradeLevel; int ident;
+            System.out.println("What is the First Name of the new student?");
+            fName = students.next();
+            System.out.println("What is the Last Name of the new student?");
+            lName = students.next();
+            System.out.println("What is the GPA of the new student?");
+            gpah = students.nextDouble();
+            System.out.println("What is the Grade Level of the new student?");
+            gradeLevel = students.nextInt();
+            System.out.println("What is the ID Number of the new student?");
+            ident = students.nextInt();
         }
         else if(option == 2){
             System.out.println("Which student would you like to remove?");
