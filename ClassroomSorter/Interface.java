@@ -25,13 +25,14 @@ public class Interface
         Scanner menu = new Scanner(System.in);
         System.out.println("\u000c");
         System.out.println("Welcome to " + mainClass.getTeacher() + "'s Classroom! What would you like to do next?");  
-        System.out.println(" 1. List Students \n 2. Sort Students \n 3. Add/Remove Students \n 4. Promote Students \n 0. Exit");
+        System.out.println(" 1. List Students \n 2. Sort Students \n 3. Add/Remove Students \n 4. Promote Students \n 5. Find Student \n 0. Exit");
         switch(menu.nextInt()){
             case 0: System.exit(0);
             case 1: menu.close(); getClassList();
             case 2: 
             case 3: menu.close(); manipulateStudents();
             case 4: menu.close(); promoteStudentGrade();
+            case 5: //easiest to search by student id
         }
         
     }
