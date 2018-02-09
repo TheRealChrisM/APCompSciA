@@ -17,6 +17,7 @@ public class Interface
         String room = input.next();
         System.out.println("Creating class with Teacher " + lead + " in room " + room + " Please Wait!");
         mainClass = new Classroom(room, lead);
+        input.close();
         gotoMenu();
         
     }
@@ -27,12 +28,32 @@ public class Interface
         System.out.println(" 1. List Students \n 2. Sort Students \n 3. Add/Remove Students \n 4. Promote Students \n 0. Exit");
         switch(menu.nextInt()){
             case 0: System.exit(0);
-            case 1: mainClass.getStudents();
+            case 1: menu.close(); getClassList();
             case 2: 
-            case 3: manipulateStudents();
-            case 4:
-            case 5:
+            case 3: menu.close(); manipulateStudents();
+            case 4: menu.close(); promoteStudentGrade();
         }
+        
+    }
+    public static void getClassList(){
+        mainClass.getStudents();
+        System.out.println("Press 0 to go back to menu!");
+        Scanner list = new Scanner(System.in);
+        int wait = 1;
+        wait = list.nextInt();
+        while(wait!=0){
+        
+        }
+        gotoMenu();
+    }
+    public static void promoteStudentGrade(){
+       Scanner promotion = new Scanner(System.in); 
+       System.out.println("What student would you like to promote?");
+       mainClass.getStudents();
+       int promo = promotion.nextInt();
+       promotion.close();
+       mainClass.promoteStudent(promo);
+       gotoMenu();
     }
     public static void manipulateStudents(){
         Scanner students = new Scanner(System.in);
@@ -50,11 +71,17 @@ public class Interface
             gradeLevel = students.nextInt();
             System.out.println("What is the ID Number of the new student?");
             ident = students.nextInt();
+            
+            mainClass.addStudent(fName, lName, gpah, gradeLevel, ident);
+            students.close();
+            gotoMenu();
         }
         else if(option == 2){
             System.out.println("Which student would you like to remove?");
             mainClass.getStudents();
             mainClass.removeStudent(students.nextInt());
+            students.close();
+            gotoMenu();
         }
         else{
             System.out.println("ERROR");

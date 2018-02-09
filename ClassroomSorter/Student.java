@@ -34,6 +34,9 @@ public class Student
     public int getGrade(){
         return grade;
     }
+    public void nextGrade(){
+        grade++;
+    }
     public int getSID(){
         return sID;
     }

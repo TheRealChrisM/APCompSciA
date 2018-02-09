@@ -44,4 +44,7 @@ public class Classroom
             }
         }
     }
+    public void promoteStudent(int arrLoc){
+        roster[arrLoc].nextGrade();
+    }
 }

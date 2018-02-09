@@ -13,4 +13,6 @@ comment5.params=first\ last\ gpa\ grade\ id
 comment5.target=void\ addStudent(java.lang.String,\ java.lang.String,\ double,\ int,\ int)
 comment6.params=arrLoc
 comment6.target=void\ removeStudent(int)
-numComments=7
+comment7.params=arrLoc
+comment7.target=void\ promoteStudent(int)
+numComments=8
