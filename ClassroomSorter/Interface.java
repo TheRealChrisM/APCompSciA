@@ -70,7 +70,15 @@ public class Interface
         gotoMenu();
     }
     public static void sortStudents(){
-        mainClass.studentSorter();
+        Scanner sort = new Scanner(System.in);
+        System.out.println("What would you like to sort by? \n 1. Student ID \n 2. Last Name \n 3. First Name \n Press any other button to return to main menu.");
+        switch(sort.nextInt()){
+            case 1: mainClass.studentSorterBySID();
+            case 2: mainClass.studentSorterByName(1);
+            case 3: mainClass.studentSorterByName(0);
+            default: gotoMenu();
+        }
+        mainClass.studentSorterBySID();
         gotoMenu();
     }
     public static void getClassList(){

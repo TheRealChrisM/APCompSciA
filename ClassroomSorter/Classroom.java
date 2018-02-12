@@ -48,13 +48,38 @@ public class Classroom
     public void promoteStudent(int arrLoc){
         roster[arrLoc].nextGrade();
     }
-    public void studentSorter(){
+    public void studentSorterBySID(){
         int minVal;
         Student tmp;
         for(int x = 0; x<classSize; x++){
             minVal = x;
             for(int y = x; y<classSize; y++){
                 if(roster[y].getSID() < roster[minVal].getSID()){
+                    minVal = y;
+                }
+            }
+            tmp = roster[x];
+            System.out.println(tmp);
+            System.out.println(roster[minVal]);
+            roster[x] = roster[minVal];
+            roster[minVal] = tmp;
+        }
+    }
+    //0 for first & 1 for last
+    public void studentSorterByName(int type){
+        int minVal;
+        boolean typeB;
+        if(type==0){
+            typeB = true;
+        }
+        else{
+            typeB = false; 
+        }
+        Student tmp;
+        for(int x = 0; x<classSize; x++){
+            minVal = x;
+            for(int y = x; y<classSize; y++){
+                if(roster[y].getName(typeB).compareToIgnoreCase(roster[minVal].getName(typeB))){
                     minVal = y;
                 }
             }
