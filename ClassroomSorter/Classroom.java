@@ -43,8 +43,35 @@ public class Classroom
                 }
             }
         }
+        classSize--;
     }
     public void promoteStudent(int arrLoc){
         roster[arrLoc].nextGrade();
+    }
+    public void studentSorter(){
+        int minVal;
+        Student tmp;
+        for(int x = 0; x<classSize; x++){
+            minVal = x;
+            for(int y = x; y<classSize; y++){
+                if(roster[y].getSID() < roster[minVal].getSID()){
+                    minVal = y;
+                }
+            }
+            tmp = roster[x];
+            System.out.println(tmp);
+            System.out.println(roster[minVal]);
+            roster[x] = roster[minVal];
+            roster[minVal] = tmp;
+        }
+    }
+    public Student findStudentByID(int id){
+        for(int x = 0; x<classSize;x++){
+            if(roster[x].getSID()==id){
+                return roster[x];
+            }
+        }
+        return null;
+        
     }
 }

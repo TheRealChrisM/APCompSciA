@@ -29,12 +29,35 @@ public class Interface
         switch(menu.nextInt()){
             case 0: System.exit(0);
             case 1: menu.close(); getClassList();
-            case 2: 
+            case 2: menu.close(); sortStudents();
             case 3: menu.close(); manipulateStudents();
             case 4: menu.close(); promoteStudentGrade();
-            case 5: //easiest to search by student id
+            case 5: menu.close(); findStudent();//easiest to search by student id
         }
         
+    }
+    public static void findStudent(){
+        System.out.println("What is the ID of the student you are looking for?");
+        Scanner getID = new Scanner(System.in);
+        int targetID = getID.nextInt();
+        int wait=1;
+        if(mainClass.findStudentByID(targetID)==null){
+            System.out.println("STUDENT NOT FOUND RETURNING TO MENU.");
+            System.out.println("Press 0 to continue!");
+        }
+        else{
+            System.out.println("Student Info: " + mainClass.findStudentByID(targetID));
+            System.out.println("Press 0 to continue!");
+        }
+        wait = getID.nextInt();
+        while(wait!=0){
+        }
+        getID.close();
+        gotoMenu();
+    }
+    public static void sortStudents(){
+        mainClass.studentSorter();
+        gotoMenu();
     }
     public static void getClassList(){
         mainClass.getStudents();
@@ -45,6 +68,7 @@ public class Interface
         while(wait!=0){
         
         }
+        list.close();
         gotoMenu();
     }
     public static void promoteStudentGrade(){

@@ -35,7 +35,12 @@ public class Student
         return grade;
     }
     public void nextGrade(){
-        grade++;
+        if(grade<12){
+            grade++;
+        }
+        else{
+            grade = -1;
+        }
     }
     public int getSID(){
         return sID;

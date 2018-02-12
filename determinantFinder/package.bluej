@@ -2,27 +2,15 @@
 dependency1.from=DeterminantFinderTester
 dependency1.to=DeterminantFinder
 dependency1.type=UsesDependency
-<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
-objectbench.height=155
+objectbench.height=140
 objectbench.width=451
 package.divider.horizontal=0.599476439790576
-package.divider.vertical=0.676
-package.editor.height=331
-=======
-editor.fx.0.height=744
-editor.fx.0.width=1382
-editor.fx.0.x=-8
-editor.fx.0.y=-8
-objectbench.height=139
-objectbench.width=760
-package.divider.horizontal=0.6
-package.divider.vertical=0.708
-package.editor.height=347
->>>>>>> ede009017ff083bb3878150e4213083991e417c7
+package.divider.vertical=0.706
+package.editor.height=346
 package.editor.width=670
 package.editor.x=52
 package.editor.y=52
@@ -53,8 +41,4 @@ target2.type=ClassTarget
 target2.typeParameters=
 target2.width=180
 target2.x=10
-<<<<<<< HEAD
-target2.y=120
-=======
 target2.y=150
->>>>>>> ede009017ff083bb3878150e4213083991e417c7
