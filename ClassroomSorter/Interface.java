@@ -25,19 +25,32 @@ public class Interface
         Scanner menu = new Scanner(System.in);
         System.out.println("\u000c");
         System.out.println("Welcome to " + mainClass.getTeacher() + "'s Classroom! What would you like to do next?");  
-        System.out.println(" 1. List Students \n 2. Sort Students \n 3. Add/Remove Students \n 4. Promote Students \n 5. Find Student \n 0. Exit");
+        System.out.println(" 1. List Students \n 2. Sort Students \n 3. Add/Remove Students \n 4. Promote Students \n 5. Find Student \n 6. Update GPA \n 0. Exit");
         switch(menu.nextInt()){
             case 0: System.exit(0);
-            case 1: menu.close(); getClassList();
-            case 2: menu.close(); sortStudents();
-            case 3: menu.close(); manipulateStudents();
-            case 4: menu.close(); promoteStudentGrade();
-            case 5: menu.close(); findStudent();//easiest to search by student id
+            case 1: menu.close(); System.out.println("\u000c"); getClassList();
+            case 2: menu.close(); System.out.println("\u000c"); sortStudents();
+            case 3: menu.close(); System.out.println("\u000c"); manipulateStudents();
+            case 4: menu.close(); System.out.println("\u000c"); promoteStudentGrade();
+            case 5: menu.close(); System.out.println("\u000c"); findStudent();//easiest to search by student id
+            case 6: menu.close(); System.out.println("\u000c"); updateGPA();
         }
         
     }
+    public static void updateGPA(){
+        System.out.println("What student would you like to update the GPA of?");
+        Scanner changeGPA = new Scanner(System.in);
+        mainClass.getStudents();
+        int student = changeGPA.nextInt();
+        System.out.println("What is the desired GPA for this student?");
+        double aNewGPA = changeGPA.nextDouble();
+        changeGPA.close();
+        mainClass.updateGPA(student, aNewGPA);
+        gotoMenu();
+    }
     public static void findStudent(){
         System.out.println("What is the ID of the student you are looking for?");
+        
         Scanner getID = new Scanner(System.in);
         int targetID = getID.nextInt();
         int wait=1;
@@ -49,8 +62,9 @@ public class Interface
             System.out.println("Student Info: " + mainClass.findStudentByID(targetID));
             System.out.println("Press 0 to continue!");
         }
-        wait = getID.nextInt();
+        
         while(wait!=0){
+            wait = getID.nextInt();
         }
         getID.close();
         gotoMenu();
@@ -64,9 +78,9 @@ public class Interface
         System.out.println("Press 0 to go back to menu!");
         Scanner list = new Scanner(System.in);
         int wait = 1;
-        wait = list.nextInt();
-        while(wait!=0){
         
+        while(wait!=0){
+            wait = list.nextInt();
         }
         list.close();
         gotoMenu();

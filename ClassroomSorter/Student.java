@@ -31,6 +31,9 @@ public class Student
     public double getGPA(){
         return GPA;
     }
+    public void updateGPA(double newGPA){
+        GPA = newGPA;
+    }
     public int getGrade(){
         return grade;
     }
@@ -39,7 +42,8 @@ public class Student
             grade++;
         }
         else{
-            grade = -1;
+            System.out.println("Student has graduated. (Setting grade to 13)");
+            grade = 13;
         }
     }
     public int getSID(){

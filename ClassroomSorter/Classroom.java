@@ -65,6 +65,9 @@ public class Classroom
             roster[minVal] = tmp;
         }
     }
+    public void updateGPA(int loc, double newGPA){
+        roster[loc].updateGPA(newGPA);
+    }
     public Student findStudentByID(int id){
         for(int x = 0; x<classSize;x++){
             if(roster[x].getSID()==id){
