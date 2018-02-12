@@ -2,7 +2,7 @@ import java.util.ArrayList;
 /**
  * Write a description of class PermutationGenerator here.
  *
- * @author (your name)
+ * @author Chris
  * @version (a version number or a date)
  */
 public class PermutationGenerator
@@ -14,24 +14,19 @@ public class PermutationGenerator
         setWord = aWord;
         
     }
-    
     public ArrayList<String> getPermutation(){
-       
-       if(setWord.length()==1){
-           rs.add(setWord);
-           x++;
-           
-       }
-       else{
-           PermutationGenerator a = new PermutationGenerator(setWord.substring(x));
-           rs.add(setWord.substring(0,1));
-           a.getPermutation();
-           rs.add(se
-           System.out.println(setWord.substring(x));
-           System.out.println(rs);
-       }
-       
+       permutationGen("", setWord);
        return rs; 
     }
-    
+    public void permutationGen(String prefix, String wrd) {
+        int x = wrd.length();
+        if (x == 0){
+            rs.add(prefix);
+        }
+            else { 
+                for (int y = 0; y < x; y++){
+                    permutationGen(prefix + wrd.charAt(y), wrd.substring(0, y) + wrd.substring(y+1, x));
+                }
+            }
+    }
 }
