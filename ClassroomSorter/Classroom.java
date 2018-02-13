@@ -79,7 +79,7 @@ public class Classroom
         for(int x = 0; x<classSize; x++){
             minVal = x;
             for(int y = x; y<classSize; y++){
-                if(roster[y].getName(typeB).compareToIgnoreCase(roster[minVal].getName(typeB))){
+                if(roster[y].getName(typeB).compareToIgnoreCase(roster[minVal].getName(typeB))<0){
                     minVal = y;
                 }
             }
