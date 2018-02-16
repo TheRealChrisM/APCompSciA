@@ -50,6 +50,10 @@ public class Post
         return username;
     }
     
+    //GET TIMESTAMP IN LONG FORM
+    public long getLongTimestamp(){
+        return timestamp;
+    }
     //GET TIMESTAMP
     public String getTimestamp(){
         return timeString(timestamp);

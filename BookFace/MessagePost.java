@@ -21,7 +21,9 @@ public class MessagePost extends Post
    
    //DISPLAY POST
    public void display(){
+        super.display();
         System.out.println(getText());
-        System.out.print(getTimestamp());
+        System.out.println(getTimestamp());
+        System.out.println("--------------------------------------");
    }
 }

@@ -30,6 +30,7 @@ public class PhotoPost extends Post
         super.display();
         System.out.println(getImageFile());
         System.out.println(" '" + getCaption() + "' ");
-        System.out.print(getTimestamp());
+        System.out.println(getTimestamp());
+        System.out.println("--------------------------------------");
     }
 }

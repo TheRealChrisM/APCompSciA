@@ -25,5 +25,39 @@ public class NewsFeed
             System.out.println();
         }
     }
+    //SHOW PHOTO POSTS ONLY
+    public void showPhoto(){
+        for(Post post : posts){
+            if(post instanceof PhotoPost){
+                post.display();
+                System.out.println();
+            }
+        }
+    }
+    //SHOW TEXT POSTS ONLY
+    public void showMessage(){
+        for(Post post : posts){
+            if(post instanceof MessagePost){
+                post.display();
+                System.out.println();
+            }
+        }
+    }
+    //DISPLAY CHRONOLOGICALLY
+    public void sortChrono(){
+        int minVal;
+        Post tmp;
+        for(int x = 0; x<posts.size(); x++){
+            minVal = x;
+            for(int y = x; y<posts.size(); y++){
+                if(posts.get(y).getLongTimestamp() > posts.get(minVal).getLongTimestamp()){
+                    minVal = y;
+                }
+            }
+            tmp = posts.get(x);
+            posts.set(x,posts.get(minVal));
+            posts.set(minVal,tmp);
+        }
+    }
 }
 
