@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=SparseArray
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ SparseArray\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=SparseArray()
+comment2.params=
+comment2.target=int\ getNumRows()
+comment3.params=
+comment3.target=int\ getNumCols()
+comment4.params=row\ col
+comment4.target=int\ getValueAt(int,\ int)
+comment5.params=col
+comment5.target=void\ removeColumn(int)
+numComments=6
