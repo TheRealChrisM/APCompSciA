@@ -9,7 +9,6 @@ public class SparseArrayEntry
 {
     private int row;
     private int col;
-    
     private int value;
     
     public SparseArrayEntry(int r, int c, int v){

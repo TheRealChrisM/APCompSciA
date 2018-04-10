@@ -49,5 +49,6 @@ public class SparseArray
                i++; 
             }
         }
+        numCols--;
     }
 }
