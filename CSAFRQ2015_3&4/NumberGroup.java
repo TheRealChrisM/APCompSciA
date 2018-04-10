@@ -7,5 +7,7 @@
  */
 public interface NumberGroup
 {
+    //9 out of 9
+    //+1+1
     public boolean contains(int num);
 }

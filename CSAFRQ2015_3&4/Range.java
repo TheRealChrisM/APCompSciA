@@ -7,6 +7,7 @@
  */
 public class Range implements NumberGroup
 {
+    //+1+1+1+1+1
     private int min;
     private int max;
     
