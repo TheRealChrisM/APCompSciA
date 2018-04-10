@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=NumberGroup
-comment0.text=\r\n\ Write\ a\ description\ of\ interface\ NumberGroup\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Interface\ for\ NumberGroup.\r\n\r\n\ @author\ College\ Board\r\n\ @version\ AP\ CSA\ FRQ\ 2015\ Problem\ 4\r\n
 comment1.params=num
 comment1.target=boolean\ contains(int)
 numComments=2

@@ -1,12 +1,13 @@
 import java.util.*;
 /**
- * Write a description of class SparseArray here.
+ * Represents a sparse array. Contains a list of SparseArrayEntry objects.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Christopher Marotta
+ * @version AP CSA FRQ 2015 Problem 3
  */
 public class SparseArray
 {
+    //8 out of 9
     private int numRows;
     private int numCols;
     
@@ -27,6 +28,7 @@ public class SparseArray
         return numCols;
     }
     public int getValueAt(int row, int col){
+        //+1+1+1 3/3
         for(int i = 0; i<entries.size();i++){
             if((entries.get(i).getRow()==row)&&(entries.get(i).getCol()==col)){
                 return entries.get(i).getValue();
@@ -36,6 +38,7 @@ public class SparseArray
         return 0;
     }
     public void removeColumn(int col){
+        //+1+1+2+1 5/6
         for(int i = 0; i<entries.size();){
             if(entries.get(i).getCol()>col){
                 entries.add(0,(new SparseArrayEntry(entries.get(i).getRow(),entries.get(i).getCol()-1,entries.get(i).getValue())));
@@ -49,6 +52,6 @@ public class SparseArray
                i++; 
             }
         }
-        numCols--;
+        //numCols--; <-- (+1)
     }
 }

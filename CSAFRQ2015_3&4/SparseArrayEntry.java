@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class SparseArrayEntry here.
+ * A single entry in a sparse array.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author College Board
+ * @version AP CSA FRQ 2015 Problem 3
  */
 public class SparseArrayEntry
 {

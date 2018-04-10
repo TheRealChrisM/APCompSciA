@@ -1,9 +1,9 @@
 import java.util.*;
 /**
- * Write a description of class MultipleGroups here.
+ * Stores multiple group types in an array list.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Christopher Marotta
+ * @version AP CSA FRQ 2015 Problem 4
  */
 public class MultipleGroups implements NumberGroup
 {

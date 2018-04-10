@@ -1,13 +1,12 @@
 
 /**
- * Write a description of class Range here.
+ * A NumberGroup that contains all integers between a min and max value.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Christopher Marotta
+ * @version AP CSA FRQ 2015 Problem 4
  */
 public class Range implements NumberGroup
 {
-    // instance variables - replace the example below with your own
     private int min;
     private int max;
     

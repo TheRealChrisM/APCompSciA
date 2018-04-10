@@ -1,12 +1,11 @@
 
 /**
- * Write a description of interface NumberGroup here.
+ * Interface for NumberGroup.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author College Board
+ * @version AP CSA FRQ 2015 Problem 4
  */
 public interface NumberGroup
 {
-    
     public boolean contains(int num);
 }
