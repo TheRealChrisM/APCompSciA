@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=FuelRobot
+comment0.text=\r\n\ Write\ a\ description\ of\ interface\ FuelRobot\ here.\r\n\r\n\ @author\ College\ Board\r\n\ @version\ AP\ CSA\ FRQ\ 2011\ Problem\ 3\r\n
+comment1.params=
+comment1.target=int\ getCurrentIndex()
+comment2.params=
+comment2.target=boolean\ isFacingRight()
+comment3.params=
+comment3.target=void\ changeDirection()
+comment4.params=numLocs
+comment4.target=void\ moveForward(int)
+numComments=5

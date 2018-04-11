@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=FuelDepot
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ FuelDepot\ here.\r\n\r\n\ @author\ Christopher\ Marotta\r\n\ @version\ AP\ CSA\ FRQ\ 2011\ Problem\ 3\r\n
+comment1.params=threshold
+comment1.target=int\ nextTankToFill(int)
+comment2.params=locIndex
+comment2.target=void\ moveToLocation(int)
+numComments=3
