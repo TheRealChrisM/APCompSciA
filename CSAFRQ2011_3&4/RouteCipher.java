@@ -32,9 +32,9 @@ public class RouteCipher
     
     private String encryptBlock(){
         String rs = "";
-        for(int i=0; i<letterBlock[0].length;i++){
+        for(int l=0; l<letterBlock[0].length;l++){
             for(int e=0; e<letterBlock.length;e++){
-                rs+=letterBlock[e][i];
+                rs+=letterBlock[e][l];
             }
         }
         return rs;
@@ -42,8 +42,12 @@ public class RouteCipher
     
     public String encryptMessage(String message){
         String rss = "";
-        for(int i = 0; i<message.length(); i+=numRows*numCols){
-            fillBlock(message.substring(i,i+numRows*numCols));
+        String messageIn = message;
+        while(!(messageIn.length()%(numRows*numCols)==0)){
+            messageIn+="A";
+        }
+        for(int i = 0; i<messageIn.length(); i+=numRows*numCols){
+            fillBlock(messageIn.substring(i,i+numRows*numCols));
             rss+=encryptBlock();
         }
         return rss;
